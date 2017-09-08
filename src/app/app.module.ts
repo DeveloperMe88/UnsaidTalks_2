@@ -2,17 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import {HomeModule} from './home/home.module';
+import {AboutModule} from './about/about.module';
+import {BlogModule} from './blog/blog.module';
+import {ContactModule} from './contact/contact.module';
+import {ProjectshowcaseModule} from './projectshowcase/projectshowcase.module';
+import {InterviewsModule} from './interviews/interviews.module';
+import {AppRoutingModule} from './app.routing'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomeModule,
+    AppRoutingModule,
+    AboutModule,
+    BlogModule,
+    ContactModule,
+    ProjectshowcaseModule ,
+    InterviewsModule ,
+    InterviewsModule
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
