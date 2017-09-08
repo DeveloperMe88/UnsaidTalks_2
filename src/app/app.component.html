@@ -1,20 +1,23 @@
 <header>
   <div class="container header inner">
-    <nav class="navbar">
+    <nav class="navbar navigation-bar" >
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img class="upcon" height="80px" width="80px" src="assets/images/unsaidtalksLogo.png">
-          <h4>UnsaidTalks</h4>
-          </a>
+          <!--<a class="navbar-brand" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"></a>-->
+        <a class="pull-left navigation-text" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"> UnsaidTalks </a>
         </div>
+        <!--<div >
+            <h3 ><a [routerLink]="['home']">UnsaidTalks</a></h3>
+            <h6>Gateway to Success Talks</h6>
+        </div>-->
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right masthead-nav">
-            <li><a [routerLink]="['home']">Home</a></li>
-            <li><a [routerLink]="['about']" >About</a></li>
-            <li><a [routerLink]="['blog']">Blog</a></li>
-            <li><a [routerLink]="['interviews']">Interviews</a></li>
-            <li><a [routerLink]="['projectshowcase']">Project Showcase</a></li>
-            <li><a [routerLink]="['contact']">Contact Us</a></li>
+            <li><a [routerLink]="['home']" class="navigation-text">Home</a></li>
+            <li><a [routerLink]="['about']" class="navigation-text">About</a></li>
+            <li><a [routerLink]="['blog']"class="navigation-text">Blog</a></li>
+            <li><a [routerLink]="['interviews']"class="navigation-text">Interviews</a></li>
+            <li><a [routerLink]="['projectshowcase']"class="navigation-text">Project Showcase</a></li>
+            <li><a [routerLink]="['contact']"class="navigation-text">Contact Us</a></li>
           </ul>
         </div>
       </div>
