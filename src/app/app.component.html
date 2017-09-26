@@ -1,7 +1,8 @@
+<div class="outer">
 <header>
-  <div class="container header inner">
-    <nav class="navbar navigation-bar" >
-      <div class="container">
+  <div class="container-niu header inner">
+    <nav class="navbar navigation-bar navigation-bar-margins" >
+      <div class="container-niu">
         <div class="navbar-header">
           <!--<a class="navbar-brand" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"></a>-->
         <a class="pull-left navigation-text" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"> UnsaidTalks </a>
@@ -11,9 +12,9 @@
             <h6>Gateway to Success Talks</h6>
         </div>-->
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right masthead-nav">
-            <li><a [routerLink]="['home']" class="navigation-text">Home</a></li>
-            <li><a [routerLink]="['about']" class="navigation-text">About</a></li>
+          <ul class="nav navbar-nav navbar-right masthead-nav pl-15">
+            <li><a [routerLink]="['home']" class=" navigation-text">Home</a></li>
+            <li><a [routerLink]="['about']" class=" navigation-text">About</a></li>
             <li><a [routerLink]="['blog']"class="navigation-text">Blog</a></li>
             <li><a [routerLink]="['interviews']"class="navigation-text">Interviews</a></li>
             <li><a [routerLink]="['projectshowcase']"class="navigation-text">Project Showcase</a></li>
@@ -24,18 +25,25 @@
       </nav>
   </div>
 </header>
-
-<router-outlet></router-outlet>
-<hr>
-
-<h3>This portion will contain tags, testimonials and other stuff!!</h3>
-
+<section class="content">
+  <router-outlet></router-outlet>
+</section>
 
 <hr>
-<footer class="fixed-bottom">
-  <p>Copyright © 2017 UnsaidTalks</p>
-  <nav class="navbar">
-      <div class="container">
+<section class="testimonials">
+<div *ngIf='testimonials && testimonials.length' class="testimonials-block">
+  <div ><h3 class="tesimonial-heading">{{title}}</h3></div>
+  <div ><p class="tesimonial-content">{{desc}}</p></div>
+  <div ><h4 class="tesimonial-client">{{name}}</h4></div>
+</div>
+</section>
+<hr>
+<footer class="fotter-position">
+  <div class="footer-divs float-left">
+  Copyright © 2017 UnsaidTalks
+  </div>
+  <nav class="navbar "class="footer-divs float-right footer-navbar">
+      <div class="container-niu ">
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right masthead-nav">
             <li><a [routerLink]="['home']" class="navigation-text">Home</a></li>
@@ -49,3 +57,4 @@
       </nav>
 </footer>
 
+</div>

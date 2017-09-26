@@ -12,4 +12,7 @@ export class InterviewsComponent implements OnInit {
   ngOnInit() {
   }
 
+  action():void{
+    console.log("workeddd!!!!!!!!!!!!!!!!!");
+  }
 }

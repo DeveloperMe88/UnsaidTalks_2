@@ -2,15 +2,37 @@
     display:inline-block;
     vertical-align:middle;
  }*/
-
+h1{
+    size: 32px;
+    text-align: center;
+}
+h2{
+size: 28px;
+}
+h3{
+size: 24px;
+}
+h4{
+size: 20px;
+}
+p{
+size: 16px;
+font-family:'Ubuntu';
+line-height: 1.8;
+}
  .header {
         background-repeat:no-repeat;
         background-size:100% 100%;
         height:50px;
+        font-family:'Ubuntu';
  }
  .footer{
-     position: fixed;
+    position: fixed;
     height: 100px;
     bottom: 0;
     width: 100%;
  }
+ .intro-text{
+     width:900px; 
+     margin: 0 auto;
+}

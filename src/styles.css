@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+/*@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/Ubuntu-Bold.ttf') format('ttf'),
+		url('fonts/Ubuntu-BoldItalic.ttf') format('ttf'),
+        url('fonts/Ubuntu-Italic.ttf') format('ttf'),
+        url('fonts/Ubuntu-Light.ttf') format('ttf'),
+        url('fonts/Ubuntu-LightItalic.ttf') format('ttf'),
+        url('fonts/Ubuntu-Medium.ttf') format('ttf'),
+        url('fonts/Ubuntu-MediumItalic.ttf') format('ttf'),
+        url('fonts/Ubuntu-Regular.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+} 
+h1{
+    size: 32px;
+}
+h2{
+size: 28px;
+}
+h3{
+size: 24px;
+}
+h4{
+size: 20px;
+}
+p{
+size: 16px;
+}
+
+h1,h2,h3,h4,p{
+    font-family: 'Ubuntu';
+}*/

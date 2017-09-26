@@ -1,10 +1,81 @@
+/* main section styles */
+.outer{ width:1080px; margin: 0 auto; }
+
+/* link styles */
+a.type1{
+    color:red; font-size:14px;
+} 
+a.type2{
+    color:greenyellow; 
+    background: blue; 
+    font-size:15px;
+} 
+a.type3{
+    color:yellow; font-size:14px;
+} 
+.pl-15 a{ padding:15px; }
+.p-15{ padding:15px; }
+/* */
+
+h1{
+    size: 32px;
+}
+h2{
+size: 28px;
+}
+h3{
+size: 24px;
+}
+h4{
+size: 20px;
+}
+p{
+size: 16px;
+}
+a{
+    font-weight: bolder;
+    font-family:'Ubuntu';
+}
+h1,h2,h3,h4,p,a{
+    font-family:'Ubuntu';
+}
 .navigation-bar{
-    background-color: #21c9e0;
+    /*background-color: #21c9e0;*/
+     background-color:white;
+}
+.navigation-bar-margins{
+     margin-top: 10px;
 }
 .navigation-text{
     color: black;
 }
-/*.logo-image{
-    height:"40px";
-    width: "40px";
-}*/
+.footer-position{
+    text-align: center;
+}
+.footer-divs{
+    display: inline-block;
+}
+.testimonials-block{
+    border: 2px solid #eee;
+    width:900px; 
+    margin: 0 auto;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float : right;
+}
+.footer-navbar{
+    margin-top: -15px;
+}
+.tesimonial-client{
+    margin-left: 800px;
+}
+.tesimonial-heading{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.tesimonial-content{
+    margin-left: 10px;
+}
