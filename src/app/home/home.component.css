@@ -1,7 +1,3 @@
-/*header img,header nav {
-    display:inline-block;
-    vertical-align:middle;
- }*/
 h1{
     size: 32px;
     text-align: center;
@@ -20,19 +16,11 @@ size: 16px;
 font-family:'Ubuntu';
 line-height: 1.8;
 }
- .header {
-        background-repeat:no-repeat;
-        background-size:100% 100%;
-        height:50px;
-        font-family:'Ubuntu';
- }
- .footer{
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
- }
- .intro-text{
+.intro-text{
      width:900px; 
      margin: 0 auto;
+}
+.image-alignment{
+     height: 100% ;
+     width: 100%;
 }

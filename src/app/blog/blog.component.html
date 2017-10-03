@@ -1,3 +1,6 @@
-<p>
-  Welcome to blog page!
-</p>
+
+<div *ngIf='blogPosts && blogPosts.length' class="blog-parent-div">
+  <div  *ngFor='let blog of blogPosts' class="blog-main-div">
+        {{blog.title}}
+  </div>
+</div>

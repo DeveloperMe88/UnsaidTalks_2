@@ -1,0 +1,54 @@
+.image-parent{
+    width:1080px;
+    margin: 0 auto;
+    height: 300px;
+}
+.image-alignment{
+     height: 100% ;
+     width: 100%;
+}
+h1{
+    size: 32px;
+    text-align: center;
+}
+h2{
+size: 28px;
+}
+h3{
+size: 24px;
+}
+h4{
+size: 20px;
+}
+p{
+size: 22px;
+font-family:'Ubuntu';
+line-height: 2.2;
+}
+.text-quotes{
+    width:60%;
+    margin: 0 auto;
+    color: #cccccc;
+    size: 28px;
+    font-family:'Ubuntu';
+    line-height: 2.2;
+}
+.text-parent{
+    width:1080px;
+    margin: 0 auto;
+}
+.text-general{
+    width:80%;
+    margin: 0 auto;
+}
+.list-general{
+    width: 88%;
+    margin: 0 auto;
+    size: 22px;
+    font-family:'Ubuntu';
+    line-height: 2.2;
+}
+.list-child{
+    width: 90%;
+    margin: 0 auto;
+}
