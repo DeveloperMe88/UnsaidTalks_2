@@ -1,0 +1,15 @@
+.interview-main-div{
+    padding: 30px;
+    height: 200px;
+    width: 31.33%;
+    display: inline-block;
+    margin: 1%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #21c9e0;
+}
+.interview-parent-div{
+    height: 460px;
+    width:100%;
+    overflow: scroll;
+}

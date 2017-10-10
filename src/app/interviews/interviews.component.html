@@ -1,13 +1,13 @@
 <h1>Welcome to interviews section</h1>
-
-<img src="assets/images/Interview.jpg" alt="Home Page" align="middle" height="100%" width="100%">
-
+<img src="assets/images/Interview.jpg" alt="Home Page" align="middle" height="100%" width="100%"/>
 <h2>
-    Body of this section
+    Select your university
 </h2>
-<select>
-  <option value="volvo" (click)="action()">volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+<select (change)="onChange($event.target.value)">
+    <option *ngFor="let i of colleges">{{i}}</option>
 </select>
+<div *ngIf='companies && companies.length' class="interview-parent-div">
+  <div  *ngFor='let company of companies' class="interview-main-div">
+    {{company}}
+  </div>
+</div>

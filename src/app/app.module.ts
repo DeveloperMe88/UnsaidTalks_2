@@ -8,7 +8,7 @@ import {BlogModule} from './blog/blog.module';
 import {ContactModule} from './contact/contact.module';
 import {ProjectshowcaseModule} from './projectshowcase/projectshowcase.module';
 import {InterviewsModule} from './interviews/interviews.module';
-import {AppRoutingModule} from './app.routing'
+import {AppRoutingModule} from './app.routing';
 
 @NgModule({
   declarations: [

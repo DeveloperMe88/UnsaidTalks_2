@@ -9,10 +9,17 @@ export class InterviewsComponent implements OnInit {
 
   constructor() { }
 
+  colleges:String[]=["Thapar University","PEC","IIT Delhi","IIT Mumbai","IIT Kanpur"];
+  companies:String[]=null;
+
   ngOnInit() {
   }
-
-  action():void{
-    console.log("workeddd!!!!!!!!!!!!!!!!!");
-  }
+  onChange(collegeValue) {
+    console.log(collegeValue);
+    if(collegeValue==="Thapar University"){
+      this.companies=["Amazon","Walmart","Nagarro","Microsoft","NXP","ARM","DeShaw"];
+    } else if(collegeValue==="IIT Delhi"){
+      this.companies=["Flipkart","Myntra","Oracle","Facebook","Wipro","Oxigen","Sandisk"];
+    }
+}
 }

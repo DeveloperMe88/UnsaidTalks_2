@@ -1,6 +1,7 @@
 
 <div *ngIf='blogPosts && blogPosts.length' class="blog-parent-div">
-  <div  *ngFor='let blog of blogPosts' class="blog-main-div">
-        {{blog.title}}
+  <div  *ngFor='let blogVar of blogPosts' [ngStyle]="{'background-image': 'url(' + blogVar.imageUrl + ')'}" class="blog-main-div">
+    {{blogVar.title}}
   </div>
 </div>
+
