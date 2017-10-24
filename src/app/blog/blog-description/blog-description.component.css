@@ -1,0 +1,23 @@
+h1{
+    size: 32px;
+    text-align: center;
+}
+h2{
+size: 28px;
+}
+h3{
+size: 24px;
+}
+h4{
+size: 20px;
+}
+p{
+size: 22px;
+font-family:'Ubuntu';
+line-height: 2.2;
+text-align: justify;
+}
+.blog-body{
+    width:80%;
+    margin: 0 auto;
+}

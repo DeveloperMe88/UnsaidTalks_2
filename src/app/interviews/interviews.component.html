@@ -3,11 +3,11 @@
 <h2>
     Select your university
 </h2>
-<select (change)="onChange($event.target.value)">
+<select (change)="onChange($event.target.value)" [(ngModel)]="selectedCollege">
     <option *ngFor="let i of colleges">{{i}}</option>
 </select>
 <div *ngIf='companies && companies.length' class="interview-parent-div">
-  <div  *ngFor='let company of companies' class="interview-main-div">
+  <div  *ngFor='let company of companies' class="interview-main-div" (click)="studentList(company)">
     {{company}}
   </div>
 </div>

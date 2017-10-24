@@ -1,6 +1,6 @@
 
-<div *ngIf='blogPosts && blogPosts.length' class="blog-parent-div">
-  <div  *ngFor='let blogVar of blogPosts' [ngStyle]="{'background-image': 'url(' + blogVar.imageUrl + ')'}" class="blog-main-div">
+<div *ngIf='blogPosts && blogPosts.length' class="blog-parent-div" >
+  <div  *ngFor='let blogVar of blogPosts' [ngStyle]="{'background-image': 'url(' + blogVar.imageUrl + ')'}" class="blog-main-div" (click)="viewBolg(blogVar.title)">
     {{blogVar.title}}
   </div>
 </div>

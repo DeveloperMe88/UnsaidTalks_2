@@ -1,3 +1,25 @@
 <h1>
-  Selected College
+  Selected College={{selectedCollege}}
+  Selected Company={{selectedCompany}}
 </h1>
+<div>
+  <input type="button" (click)="showCompanyList()" value="Back to Company List">
+</div>
+<div>
+  <table *ngIf='studentList && studentList.length'>
+    <thead>
+				<tr>
+					<th>Name</th>
+					<th>Branch And Year</th>
+					<th>Interview Link</th>
+				</tr>
+			</thead>
+      <tbody>
+				<tr *ngFor='let student of studentList'>
+					<td>{{student.studentName}}</td>
+					<td>{{student.branchAndYear}}</td>
+					<td><a>Click Here</a></td>
+				</tr>
+			</tbody>
+  </table>
+</div>
