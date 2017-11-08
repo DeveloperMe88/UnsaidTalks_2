@@ -7,6 +7,9 @@ import {ContactComponent} from 'app/contact/contact.component'
 import {InterviewsComponent} from 'app/interviews/interviews.component'
 import {ProjectshowcaseComponent} from 'app/projectshowcase/projectshowcase.component'
 
+/**
+ * this contains routing paths for navigation bar
+ */
 const routes: Routes = [  
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: '*', pathMatch: 'full', redirectTo: 'home' },

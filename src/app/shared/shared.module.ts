@@ -8,4 +8,7 @@ import { SharedComponent } from './shared.component';
   ],
   declarations: [SharedComponent]
 })
+/**
+ * this module contains all the shared components of the application
+ */
 export class SharedModule { }

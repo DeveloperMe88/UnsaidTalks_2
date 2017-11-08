@@ -9,5 +9,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [ProjectshowcaseComponent]
-})
+})/**
+ * this module deals with project showcase tab
+ */
 export class ProjectshowcaseModule { }

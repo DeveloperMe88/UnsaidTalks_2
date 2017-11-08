@@ -2,31 +2,37 @@ import { Injectable } from '@angular/core';
 import { BBox } from './../shared/model/iBbox';
 
 @Injectable()
+/**
+ * this class contains all the services required for blog tab
+ */
 export class BlogServiceService {
 
   constructor() { }
   blogPostsDeatils: BBox[];
   selectedBlogPost:String="";
 
+/**
+ * this method returns array of blogs
+ */
   getBlogPosts():BBox[]{
     this.blogPostsDeatils=[
     {id : "0",
-    title: "Post1",
+    title: "Hostel Blog",
     imageUrl:"https://www.theblogstarter.com/wp-content/uploads/2014/02/4.jpg"},
     {id : "1",
-    title: "Post2",
+    title: "Placement Blog",
     imageUrl:"https://www.revenuearchitects.com/wp-content/uploads/2017/02/Blog_pic.png"},
     {id : "2",
-    title: "Post3",
+    title: "Placement ECE",
     imageUrl:"http://markdalton.net/wp-content/uploads/2017/03/F7148507-7860-465B-950B-2F55B420CEDB-1229-0000010877FFE7CA_tmp.jpg"},
     {id : "3",
-    title: "Post4",
+    title: "Placement COE",
     imageUrl:"http://10.15.0.113:15871/cgi-bin/blockpage.cgi?ws-session=800243148"},
     {id : "4",
-    title: "Post5",
+    title: "College",
     imageUrl:"http://foxtailmarketing.com/wp-content/uploads/2014/07/+recommended_blog_3.jpg"},
     {id : "5",
-    title: "Post6",
+    title: "Hostel Food",
     imageUrl:"https://www.theblogstarter.com/wp-content/uploads/2014/02/4.jpg"},
     {id : "6",
     title: "Post7",
@@ -60,6 +66,15 @@ export class BlogServiceService {
 <p style="text-align: justify;">This was Aastha Mahendru- 2017 ECE Alumni. Feel free to contact me at &ldquo;aasthamahendru94@gmail.com&rdquo;. I thank you so much for reading.&nbsp;<img src="https://html-online.com/editor/tinymce4_6_5/plugins/emoticons/img/smiley-smile.gif" alt="smile" /></p>`
     
     return this.selectedBlogPost;
+  }
+
+/**
+ * filters the blog list according to typed keyword.
+ * filter is applied on title of blog post
+ * @param key 
+ */
+  getSearchedPosts(key:String):BBox[]{
+   return this.blogPostsDeatils.filter(x=>x.title.toLocaleLowerCase().includes(key.toLocaleLowerCase()));
   }
   
 

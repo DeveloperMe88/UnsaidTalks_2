@@ -7,6 +7,9 @@ import {BlogServiceService} from '../blog-service.service'
   templateUrl: './blog-description.component.html',
   styleUrls: ['./blog-description.component.css']
 })
+/**
+ * this component loads view of selected blog
+ */
 export class BlogDescriptionComponent implements OnInit {
 
   constructor(private _route: ActivatedRoute,private _blogservice: BlogServiceService) { }

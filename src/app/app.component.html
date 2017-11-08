@@ -1,10 +1,10 @@
 <div class="outer">
 <header>
+  <!-- header area -->
   <div class="container-niu header inner">
     <nav class="navbar navigation-bar navigation-bar-margins" >
       <div class="container-niu">
         <div class="navbar-header">
-          <!--<a class="navbar-brand" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"></a>-->
         <a class="pull-left navigation-text" href="#"><img class="upcon" height="40px" width="40px" src="assets/images/unsaidtalksLogo.png"> UnsaidTalks </a>
         </div>
         <!--<div >
@@ -25,11 +25,13 @@
       </nav>
   </div>
 </header>
+
+<!--area where all other views will be loaded -->
 <section class="content">
   <router-outlet></router-outlet>
 </section>
-
 <hr>
+<!-- testimonials area -->
 <section class="testimonials">
 <div *ngIf='testimonials && testimonials.length' class="testimonials-block">
   <div ><h3 class="tesimonial-heading">{{title}}</h3></div>
@@ -38,6 +40,7 @@
 </div>
 </section>
 <hr>
+<!-- footer area -->
 <footer class="fotter-position">
   <div class="footer-divs float-left">
   Copyright © 2017 UnsaidTalks
@@ -56,5 +59,4 @@
       </div>
       </nav>
 </footer>
-
 </div>

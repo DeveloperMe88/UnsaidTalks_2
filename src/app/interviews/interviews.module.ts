@@ -6,7 +6,9 @@ import { SelectedCollegeComponent } from './selected-college/selected-college.co
 import {InterviewsService} from './interviews.service';
 import { FormsModule } from '@angular/forms';
 import { InterviewDescriptionComponent } from './interview-description/interview-description.component';
-
+/**
+ * this module contains routes for inteview section, components for interview section
+ */
 @NgModule({
   imports: [
     CommonModule,

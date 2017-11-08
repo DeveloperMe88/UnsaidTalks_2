@@ -1,3 +1,7 @@
+<!-- template for blog component -->
+<div class="search-bar">
+<input type="text" [(ngModel)]="searchKeyWord" (keyup)="filterBlogs()" placeholder="search">
+</div>
 
 <div *ngIf='blogPosts && blogPosts.length' class="blog-parent-div" >
   <div  *ngFor='let blogVar of blogPosts' [ngStyle]="{'background-image': 'url(' + blogVar.imageUrl + ')'}" class="blog-main-div" (click)="viewBolg(blogVar.title)">

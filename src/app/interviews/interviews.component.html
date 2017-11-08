@@ -1,3 +1,4 @@
+<!-- view for interview section -->
 <h1>Welcome to interviews section</h1>
 <img src="assets/images/Interview.jpg" alt="Home Page" align="middle" height="100%" width="100%"/>
 <h2>
@@ -6,8 +7,9 @@
 <select (change)="onChange($event.target.value)" [(ngModel)]="selectedCollege">
     <option *ngFor="let i of colleges">{{i}}</option>
 </select>
+<input type="text" [(ngModel)]="searchKeyWord" placeholder="search" (keyup)="searchCompanies()">
 <div *ngIf='companies && companies.length' class="interview-parent-div">
-  <div  *ngFor='let company of companies' class="interview-main-div" (click)="studentList(company)">
+<div  *ngFor='let company of companies' class="interview-main-div" (click)="studentList(company)">
     {{company}}
-  </div>
+</div>
 </div>
